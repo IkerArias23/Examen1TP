@@ -129,7 +129,7 @@ public class Tablero {
 
                         estadoSiguiente[i][j] = 1;
                     } else {
-                        // Sigue muerta
+                        
                         estadoSiguiente[i][j] = 0;
                     }
                 }
