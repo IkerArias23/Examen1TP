@@ -19,12 +19,12 @@ import mates.Matematicas;
 
 /**
  * Clase principal que muestra el cálculo del número PI
- * mediante el método de Montecarlo.
+ * mediante el metodo de Montecarlo.
  */
 public class Principal {
 
     /**
-     * Método principal que ejecuta el programa.
+     * Metodo principal que ejecuta el programa.
      * Recibe como argumento el número de pasos para la aproximación.
      *
      * @param args argumentos de la línea de comandos.
