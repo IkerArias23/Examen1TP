@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Fondo del diagrama -->
+  <rect width="800" height="600" fill="#f8f8f8" stroke="#000000" stroke-width="1"/>
+  
+  <!-- Título del diagrama -->
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Diagrama UML - Prácticas de Programación</text>
+  
+  <!-- Paquete mates -->
+  <rect x="50" y="60" width="220" height="140" fill="#E6E6FA" stroke="#000000" stroke-width="1"/>
+  <path d="M50 80 H170 V60" fill="none" stroke="#000000" stroke-width="1"/>
+  <text x="60" y="75" font-family="Arial" font-size="14" font-weight="bold">mates</text>
+  
+  <!-- Clase Matematicas -->
+  <rect x="60" y="90" width="200" height="100" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <line x1="60" y1="120" x2="260" y2="120" stroke="#000000" stroke-width="1"/>
+  <line x1="60" y1="140" x2="260" y2="140" stroke="#000000" stroke-width="1"/>
+  <text x="160" y="110" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Matematicas</text>
+  <text x="65" y="160" font-family="Arial" font-size="12">+ generarNumeroPi(pasos: long): double</text>
+  
+  <!-- Paquete aplicacion -->
+  <rect x="300" y="60" width="220" height="140" fill="#E6E6FA" stroke="#000000" stroke-width="1"/>
+  <path d="M300 80 H420 V60" fill="none" stroke="#000000" stroke-width="1"/>
+  <text x="310" y="75" font-family="Arial" font-size="14" font-weight="bold">aplicacion</text>
+  
+  <!-- Clase Principal (Práctica 1) -->
+  <rect x="310" y="90" width="200" height="100" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <line x1="310" y1="120" x2="510" y2="120" stroke="#000000" stroke-width="1"/>
+  <line x1="310" y1="140" x2="510" y2="140" stroke="#000000" stroke-width="1"/>
+  <text x="410" y="110" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Principal</text>
+  <text x="315" y="160" font-family="Arial" font-size="12">+ main(args: String[]): void</text>
+  
+  <!-- Paquete dominio -->
+  <rect x="50" y="220" width="340" height="220" fill="#E0F8E0" stroke="#000000" stroke-width="1"/>
+  <path d="M50 240 H170 V220" fill="none" stroke="#000000" stroke-width="1"/>
+  <text x="60" y="235" font-family="Arial" font-size="14" font-weight="bold">dominio</text>
+  
+  <!-- Clase Tablero -->
+  <rect x="60" y="250" width="320" height="180" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <line x1="60" y1="280" x2="380" y2="280" stroke="#000000" stroke-width="1"/>
+  <line x1="60" y1="340" x2="380" y2="340" stroke="#000000" stroke-width="1"/>
+  <text x="220" y="270" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Tablero</text>
+  <text x="65" y="295" font-family="Arial" font-size="12">- DIMENSION: int = 30</text>
+  <text x="65" y="310" font-family="Arial" font-size="12">- estadoActual: int[][]</text>
+  <text x="65" y="325" font-family="Arial" font-size="12">- estadoSiguiente: int[][]</text>
+  <text x="65" y="355" font-family="Arial" font-size="12">+ leerEstadoActual(): void</text>
+  <text x="65" y="370" font-family="Arial" font-size="12">+ generarEstadoActualPorMontecarlo(): void</text>
+  <text x="65" y="385" font-family="Arial" font-size="12">+ transitarAlEstadoSiguiente(): void</text>
+  <text x="65" y="400" font-family="Arial" font-size="12">+ toString(): String</text>
+  
+  <!-- Clase Principal (fuera del paquete) -->
+  <rect x="410" y="250" width="200" height="100" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <line x1="410" y1="280" x2="610" y2="280" stroke="#000000" stroke-width="1"/>
+  <line x1="410" y1="300" x2="610" y2="300" stroke="#000000" stroke-width="1"/>
+  <text x="510" y="270" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Principal</text>
+  <text x="415" y="315" font-family="Arial" font-size="12">+ main(args: String[]): void</text>
+  
+  <!-- Paquete pr2 -->
+  <rect x="50" y="460" width="340" height="120" fill="#FADADD" stroke="#000000" stroke-width="1"/>
+  <path d="M50 480 H170 V460" fill="none" stroke="#000000" stroke-width="1"/>
+  <text x="60" y="475" font-family="Arial" font-size="14" font-weight="bold">pr2</text>
+  
+  <!-- Clase Graph -->
+  <rect x="60" y="490" width="320" height="180" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <line x1="60" y1="520" x2="380" y2="520" stroke="#000000" stroke-width="1"/>
+  <line x1="60" y1="540" x2="380" y2="540" stroke="#000000" stroke-width="1"/>
+  <text x="220" y="510" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Graph&lt;V&gt;</text>
+  <text x="65" y="535" font-family="Arial" font-size="12">- adjacencyList: Map&lt;V, Set&lt;V&gt;&gt;</text>
+  <text x="65" y="555" font-family="Arial" font-size="12">+ addVertex(v: V): boolean</text>
+  <text x="65" y="570" font-family="Arial" font-size="12">+ addEdge(v1: V, v2: V): boolean</text>
+  <text x="65" y="585" font-family="Arial" font-size="12">+ obtainAdjacents(v: V): Set&lt;V&gt;</text>
+  <text x="65" y="600" font-family="Arial" font-size="12">+ containsVertex(v: V): boolean</text>
+  <text x="65" y="615" font-family="Arial" font-size="12">+ toString(): String</text>
+  <text x="65" y="630" font-family="Arial" font-size="12">+ onePath(v1: V, v2: V): List&lt;V&gt;</text>
+  
+  <!-- Notas y conexiones -->
+  <!-- Principal (aplicacion) usa Matematicas -->
+  <path d="M310 120 L260 120" fill="none" stroke="#000000" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="270,120 260,125 260,115" fill="#000000"/>
+  
+  <!-- Principal (independiente) usa Tablero -->
+  <path d="M410 280 L380 280" fill="none" stroke="#000000" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="390,280 380,285 380,275" fill="#000000"/>
+</svg>
